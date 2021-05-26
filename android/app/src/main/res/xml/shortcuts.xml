@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="add_note"
+        android:enabled="true"
+        android:icon="@drawable/add_note_icon"
+        android:shortcutShortLabel="@string/shortcut_label">
+        <intent
+            android:action="android.intent.action.INSERT"
+            android:targetPackage="com.onlynotes.app.free"
+            android:targetClass="com.example.only_notes.MainActivity" />
+    </shortcut>
+    <!-- Specify more shortcuts here. -->
+    <capability android:name="actions.intent.CREATE_DIGITAL_DOCUMENT">
+        <intent
+            android:targetPackage="com.onlynotes.app.free"
+            android:targetClass="com.example.only_notes.MainActivity">
+            <!-- Eg. name = "Product Requirement Document" -->
+            <parameter
+                android:name="digitalDocument.name"
+                android:key="name"/>
+            <!-- Eg. articleBody = "article text" -->
+            <parameter
+                android:name="digitalDocument.articleBody"
+                android:key="articleBody"/>
+        </intent>
+    </capability>
+
+
+</shortcuts>
