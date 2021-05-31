@@ -24,8 +24,8 @@ Rest of the features in app are self explanatory e.g. delete note, view note, ed
 
 ## Screenshots
 
-![Login screen](screenshots/phone_login.png)
-![Encryption key screen](screenshots/phone_encryption.png)
-![Filters meny](screenshots/phone_filters.png)
-![Add note screen](screenshots/phone_add.png)
-![View note screen](screenshots/phone_view.png)
+<img src="screenshots/phone_login.png" alt="Login screen" height="580">
+<img src="screenshots/phone_encryption.png" alt="Encryption key screen" height="580">
+<img src="screenshots/phone_filters.png" alt="Filters menu" height="580">
+<img src="screenshots/phone_add.png" alt="Add note screen" height="580">
+<img src="screenshots/phone_view.png" alt="View note screen" height="580">
