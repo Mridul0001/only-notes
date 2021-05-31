@@ -93,13 +93,13 @@ class _EncryptionKey extends State<EncryptionKey>{
                       inputFormatters: [
                         LengthLimitingTextInputFormatter(15),
                         FilteringTextInputFormatter.deny(new RegExp(r"\s")),
-                        FilteringTextInputFormatter.allow(RegExp("[A-Za-z0-9~`!@#\/\$\%\^&\*\(\)\+\-\.=\|\?\}\{\[\]]*"))
+                        FilteringTextInputFormatter.allow(RegExp("[A-Za-z0-9]*"))
                       ],
                       obscureText: true,
                       obscuringCharacter: '*',
                       decoration: InputDecoration(
                         hintText: 'Enter your Key',
-                        errorText: _validated == false?'Must be between 7 and 15 characters long':null,
+                        errorText: _validated == false?'Must be between 7 and 15 characters long and only alphanumeric':null,
                         errorStyle: TextStyle(
                           color: Color(colors.floatingDeleteButtonDark),
                         ),
@@ -134,7 +134,7 @@ class _EncryptionKey extends State<EncryptionKey>{
                       inputFormatters: [
                         LengthLimitingTextInputFormatter(15),
                         FilteringTextInputFormatter.deny(new RegExp(r"\s")),
-                        FilteringTextInputFormatter.allow(RegExp("[A-Za-z0-9~`!@#\/\$\%\^&\*\(\)\+\-\.=\|\?\}\{\[\]]*"))
+                        FilteringTextInputFormatter.allow(RegExp("[A-Za-z0-9]*"))
                       ],
                       obscureText: true,
                       obscuringCharacter: '*',
